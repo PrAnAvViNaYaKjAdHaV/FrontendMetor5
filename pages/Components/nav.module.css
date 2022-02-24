@@ -1,0 +1,69 @@
+.container{
+  background:url('../../images/desktop/image-header.jpg');
+   height:60rem;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.Content>h1{
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+.Topbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem 0rem 5rem;
+  align-items: center;
+}
+.Topbar > h1{
+  font-size: 2rem;
+}
+.Navigation{
+  display: flex;
+  gap:2rem;
+  align-items: center;
+}
+.Navigation > P{
+  font-size: 1.2rem;
+  padding:0.5rem 1rem 0.5rem 1rem;
+
+}
+.Navigation > P:nth-child(4){
+   padding: 0;
+}
+.Button{
+  text-decoration: none;
+  background: white;
+  padding:0.5rem 1rem 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.Content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:50%;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+.menue{
+  display: none;
+  
+}
+.NevigationBox{
+  position:absolute;
+  z-index: 3;
+}
+
+@media screen and (max-width:850px) {
+     .menue{
+       display: block;
+     }
+     .Navigation >p{
+       display: none;
+     }
+}
+@media screen and (max-width:480px) {
+   .container{
+     background-size:100%;
+   }
+}
